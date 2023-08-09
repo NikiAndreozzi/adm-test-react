@@ -1,8 +1,12 @@
-import { useGetPeopleQuery } from './services/people';
+import PublicContainer from './layouts/PublicLayout';
+import PeopleContainer from './features/people/PeopleContainer';
 
-function App() {
-    const { data, error, isLoading } = useGetPeopleQuery();
-    return <h1 className="text-3xl font-bold underline">Hello world!</h1>;
+const App = () => {
+    return (
+        <PublicContainer>
+            <PeopleContainer />
+        </PublicContainer>
+    );
 }
 
 export default App;
