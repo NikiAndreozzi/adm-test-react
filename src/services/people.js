@@ -1,5 +1,3 @@
-/* GET https://swapi.dev/api/people
-· GET http://swapi.dev/api/planets/{planetId}/ */
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
 
 export const peopleApi = createApi({
