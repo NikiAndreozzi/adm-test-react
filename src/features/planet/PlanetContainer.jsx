@@ -22,7 +22,9 @@ const PlanetContainer = () => {
 
     return (
         <section className="h-container w-full mx-auto container">
-            <button className='btn btn-link' onClick={() => navigate(-1)}>&#8592; Go back</button>
+            <button className="btn btn-link" onClick={() => navigate(-1)}>
+                &#8592; Go back
+            </button>
 
             {planet && !isLoading && <Stat planet={planet} />}
             {isLoading && <Loader />}
