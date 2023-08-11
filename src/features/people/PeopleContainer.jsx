@@ -12,6 +12,10 @@ const PeopleContainer = () => {
         return !data || !data?.results || data?.results.length === 0;
     }, [data]);
 
+    const handleRefetch = () => {
+        refetch();
+    };
+
     return (
         <section className="h-container w-full">
             {!emptyResult && !isLoading && (
@@ -21,9 +25,9 @@ const PeopleContainer = () => {
             )}
 
             {!emptyResult && !isLoading && <Table data={data.results} />}
-            {error && !isLoading && <Error refetch={refetch} />}
+            {error && !isLoading && <Error refetch={handleRefetch} />}
             {isLoading && <Loader />}
         </section>
     );
 };
-export default PeopleContainer; 
+export default PeopleContainer;
