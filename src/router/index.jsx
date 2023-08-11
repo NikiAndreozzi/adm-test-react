@@ -7,8 +7,12 @@ const router = createBrowserRouter([
         element: <App />,
     },
     {
-        path: "*",
-        element: <Navigate to='/people' />,
+        path: '/planets/:id',
+        element: <div>planets</div>,
+    },
+    {
+        path: '*',
+        element: <Navigate to="/people" />,
     },
 ]);
 

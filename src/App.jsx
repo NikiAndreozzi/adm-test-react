@@ -7,6 +7,6 @@ const App = () => {
             <PeopleContainer />
         </PublicContainer>
     );
-}
+};
 
 export default App;
