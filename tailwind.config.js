@@ -4,6 +4,8 @@ export default {
     theme: {
         extend: {
             height: {
+                table: 'calc(100vh - 16rem)',
+                container: 'calc(100vh - 13rem)',
                 screen: ['100vh', '100dvh'],
             },
             width: {
