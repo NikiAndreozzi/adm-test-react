@@ -1,3 +1,5 @@
+import { formatNumber } from '../utils/number';
+
 const Stat = ({ planet }) => {
     const { name, diameter, climate, population } = planet;
     return (
@@ -9,7 +11,7 @@ const Stat = ({ planet }) => {
 
             <div className="stat">
                 <div className="stat-title">Diameter</div>
-                <div className="stat-value">{diameter ?? '-'}</div>
+                <div className="stat-value">{formatNumber(diameter)}</div>
             </div>
 
             <div className="stat">
@@ -19,7 +21,7 @@ const Stat = ({ planet }) => {
 
             <div className="stat">
                 <div className="stat-title">Population</div>
-                <div className="stat-value">{population ?? '-'}</div>
+                <div className="stat-value">{formatNumber(population)}</div>
             </div>
         </div>
     );
