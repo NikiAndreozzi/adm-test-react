@@ -16,6 +16,6 @@ const router = createBrowserRouter([
         path: '*',
         element: <Navigate to="/people" />,
     },
-]);
+], { basename: import.meta.env.DEV ? '/' : '/adm-test-react/' });
 
 export default router;
