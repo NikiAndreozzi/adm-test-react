@@ -1,5 +1,7 @@
-import App from '../App';
 import { createBrowserRouter, Navigate } from 'react-router-dom';
+
+import App from '../App';
+import PlanetContainer from '../features/planet/PlanetContainer';
 
 const router = createBrowserRouter([
     {
@@ -8,7 +10,7 @@ const router = createBrowserRouter([
     },
     {
         path: '/planets/:id',
-        element: <div>planets</div>,
+        element: <PlanetContainer />,
     },
     {
         path: '*',
